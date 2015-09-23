@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ORDR BY</title>
+    <script src= "http://apps.bdimg.com/libs/angular.js/1.3.9/angular.min.js"></script>
+</head>
+<body>
+<div data-ng-app="" data-ng-init="persons=[{name:'allen',age:14},{name:'allen1',age:13},{name:'allen2',age:22}]">
+
+    <p>循环对象:</p>
+    <ul>
+        <li data-ng-repeat=" x in persons | orderBy:'age'">
+            {{ x.name + ', ' + x.age }}
+        </li>
+    </ul>
+
+</div>
+
+
+</body>
+</html>

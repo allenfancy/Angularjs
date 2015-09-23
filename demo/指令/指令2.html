@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>带有对象的表达式</title>
+    <script src="http://apps.bdimg.com/libs/angular.js/1.3.9/angular.min.js"></script>
+</head>
+<body>
+<div data-ng-app="" data-ng-init="q = 1;p = 2">
+    number:<input type="text" ng-model="q">
+    price:<input type="text" ng-model="p">
+    totalPrice:{{q*p}}
+</div>
+
+</body>
+</html>

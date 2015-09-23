@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>指令数组</title>
+    <script src="http://apps.bdimg.com/libs/angular.js/1.3.9/angular.min.js"></script>
+</head>
+<body>
+<div data-ng-app="" data-ng-init="names=['fancy','jone','honey','iverson','allen']">
+   <p>use  ng-repeat </p>
+    <ul>
+        <li data-ng-repeat="x in names">
+            {{x}}
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>

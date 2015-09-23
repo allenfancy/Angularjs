@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="http://apps.bdimg.com/libs/angular.js/1.3.9/angular.min.js"></script>
+</head>
+<body>
+<p>尝试修改以下的表单</p>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+
+firtname:<input type="text" ng-model="firstName"><br>
+    lastname:<input type="text" ng-model="lastName"><br>
+
+    fullName:{{firstName + lastName}}
+</div>
+
+<script>
+    var app = angular.module('myApp',[]);
+    app.controller('myCtrl',function($scope){
+       $scope.firstName = "allen";
+        $scope.lastName = "fancy";
+    });
+
+</script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+1.表达式
+2.指令
+3.控制器
+4.过滤器
+5.Http
+6.表格
+7.HTML DOM
+8.事件
+9.模块
+10.表单
+11.验证
+12API
+13.Bootstrap
+Angularjs01
+ <script src="http://apps.bdimg.com/libs/angular.js/1.3.9/angular.min.js"></script>
