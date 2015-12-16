@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>在body里面使用模块</title>
+
+    <script src="http://apps.bdimg.com/libs/angular.js/1.3.9/angular.min.js"></script>
+</head>
+<body>
+<div ng-app="myApp" ng-controller="myCtrl">
+
+    {{firstName + '     ' + lastName}}
+</div>
+<script>
+    var app = angular.module('myApp',[]);
+    app.controller('myCtrl',function($scope){
+        $scope.firstName = "allen";
+        $scope.lastName = "iverson";
+
+    })
+
+</script>
+</body>
+</html>
